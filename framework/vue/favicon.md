@@ -26,6 +26,15 @@
 ### 基于webpack环境vue组件
 
 想要让favicon.ico 的兼容性更好，favicon.ico图标一般建议放在根目录。放在其他目录，页面加载可能获取不到。 
+
+> 问题：
+>
+> ​	favicon.ico文件放在根目录中，可能会出现`npm run dev`加载成功，`npm run build`未加载成功的情况。
+>
+> 解决方案：
+>
+> ​	将favicon.ico文件存放在static目录，使用`npm run build`打包，加载成功。
+
 如果是`vue-cli(脚手架)`搭建的项目，需按以下内容进行修改:
 
 1. 修改配置文件 `build/webpack.dev.conf.js`
@@ -36,14 +45,14 @@ new HtmlWebpackPlugin({
     template: 'index.html',
     inject: true,
     // 增加favicon内容
-    favicon: './favicon.ico'
+    favicon: './static/favicon.ico'
 })
 ```
 
 2. 修改入口文件`index.html`
 
 ```html
-<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon"/>
 ```
 
 3. 重新编译运行

@@ -47,7 +47,7 @@ Window下进入cmd，执行`code --install-extension [test.vsix]`
 
 * 参考: [如何优雅地使用 VSCode 来编辑 vue 文件](https://www.clarencep.com/2017/03/18/edit-vue-file-via-vscode)
 
-1. 安装vetur插件
+1. 安装 Vetur 插件
 
 安装方式参考[2.1 插件安装](### 2.1 插件安装)
 
@@ -80,7 +80,18 @@ npm install -g eslint-plugin-html
 }
 ```
 
+### 3.2.2 Eslint
+
+### 3.2.3 Prettier - Code formatter
+
+* [vscode + prettier 专治代码洁癖](https://blog.csdn.net/anxin_wang/article/details/81234214)
+
+1. 安装 Prettier 插件
+
+安装成功后，编辑器默认的格式化处理就会被prettier代替， 默认快捷键是alt + shift + f
+
+2. 配置
+
 ## 4 扩展
 
 * [强大的 VS Code](https://www.imooc.com/article/39349)
-
