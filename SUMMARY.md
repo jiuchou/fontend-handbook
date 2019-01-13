@@ -1,9 +1,9 @@
 # Summary
 
 * [Introduction](README.md)
-* [开发工具](DevelopTools/README.md)
-    * [Visual Studio Code](DevelopTools/VSCode.md)
-    * [node和npm](DevelopTools/node-and-npm.md)
+* 开发工具相关
+    * environment-handbook/Chapter0/VSCode.md
+    * environment-handbook/Chapter1/section1.2.InstallSoftware/DevelopTools/node-and-npm.md
 * [构建工具](Bundle/README.md)
     * [webpack4](Bundle/webpack4.md)
 * [框架](framework/README.md)
